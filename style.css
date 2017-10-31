@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Changa');
+body{
+	font-family: 'Changa', sans-serif;
+}
+header {
+    position: relative;
+    text-align: center;
+}
+header a.prev{
+	left: 0;
+}
+header a.next {
+    right: 0;
+}
+header a {
+    border-bottom: 3px solid #face0a;
+    color: #777777;
+    font-size: 1.6em;
+    padding-bottom: 2px;
+    position: absolute;
+    text-decoration: none;
+    top: 10px;
+}
+header .date {
+    color: #099e56;
+    font-size: 1.6em;
+    letter-spacing: -0.1em;
+    line-height: 2.2em;
+    margin: 0;
+    text-transform: uppercase;
+}
+header .date b {
+    display: block;
+    font: bold 2.8em/1.2em 'Changa', sans-serif;
+    letter-spacing: 0;
+}
+.events {
+	padding-left: 0;
+	text-align: right;
+}
+
+li.event {
+    direction: rtl;
+}
+
+.events .event {
+    box-sizing: border-box;
+    background: #f2f2f2;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    box-shadow: 0 3px 0 #459be7;
+    color: #777777;
+    font-size: 1.6em;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+    position: relative;
+}
+.new, .create input[type="submit"] {
+    background: #0ba158;
+}
+.new {
+	margin-top: 20px;
+}
+.create {
+	margin-top: 20px;
+	overflow: auto;
+	position: relative;
+}
+.create input[type="text"] {
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #dedede;
+    font: 1.6em 'Changa', sans-serif;
+    padding: 10px;
+    width: 100%;
+    text-align: right;
+    direction: rtl;
+}
+.create input[type="submit"] {
+	border-left: 2px solid #dedede;
+	display: block;
+	position: absolute;
+	right: 1px;
+	top: 0;
+	width: 160px;
+}
+
+.new,
+.create input[type="submit"] {
+  box-sizing: border-box;
+  background: #d64038;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font: bold 1.6em 'Changa', sans-serif;
+  padding: 11px 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.create input[type="submit"] {border-right: 2px solid #dedede;display: block;position: absolute;left: 1px;top: 0;width: 190px;}
+
+.new:hover, .create input[type="submit"]:hover {
+		text-decoration: underline;
+}
